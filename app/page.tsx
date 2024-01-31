@@ -2,6 +2,7 @@ import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import styles from '@/app/ui/home.module.css';
+import { lusitana } from './ui/font';
 
 export default function Page() {
   return (
@@ -22,6 +23,7 @@ export default function Page() {
             </a>
             , brought to you by Nawroz.
           </p>
+          <p className={`${lusitana.className }`}>Hello Word</p>
           <Link
             href="/login"
             className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
